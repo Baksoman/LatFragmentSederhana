@@ -54,6 +54,13 @@ class fSatu : Fragment() {
                 fragmentDua )
             fragmentTransaction.commit()
         }
+
+        val fragmentDua = fDua()
+        val dataKirim = Bundle().apply {
+            putString("Nama", "Andi")
+            putString("Alamat", "Siwalankerto")
+        }
+        fragmentDua.arguments = dataKirim
     }
 
     companion object {
