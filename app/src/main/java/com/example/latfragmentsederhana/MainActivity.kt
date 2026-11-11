@@ -25,6 +25,15 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null) {
             replaceFragment(fSatu())
         }
+
+//        Buat onClickListener pada onCreate dan ubah ke Fragment Dua pada saat button ke 2 di klik
+        btnFragmentSatu.setOnClickListener {
+            replaceFragment(fSatu())
+        }
+//        Buat onClickListener juga untuk membuka kembali Fragment Satu
+        btnFragmentDua.setOnClickListener {
+            replaceFragment(fDua())
+        }
     }
 
     private fun replaceFragment(fragment: Fragment) {
