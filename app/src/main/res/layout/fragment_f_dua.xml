@@ -3,6 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FEE2AD"
+    android:padding="16dp"
     tools:context=".fDua">
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment fDua" />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data dari Fragment 1" />
+
+    <Button
+        android:id="@+id/btnOpenFDua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buka Fragment 1"/>
 
 </LinearLayout>
